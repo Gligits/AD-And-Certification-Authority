@@ -6,7 +6,7 @@ Installing a root and a secondary CA, configure the CRL and AIA distribution poi
 # First we are gonna install a Secondary Enterprise CA Using a Standalone Root CA:
 - The root CA **installed in DC1** is the main authority responsible for issuing and signing digital certificates within an organization. It's usually set up as a standalone system to enhance security, as it should be as isolated as possible.
 
-- The secondary (or subordinate) enterprise CA **installed in server1 ** will rely on the root CA for its trust hierarchy. The subordinate CA can issue certificates to end users and devices within the enterprise, but it's tied to the root CA for trust.
+- The secondary (or subordinate) enterprise CA **installed in server1** will rely on the root CA for its trust hierarchy. The subordinate CA can issue certificates to end users and devices within the enterprise, but it's tied to the root CA for trust.
 
 -> By separating the CAs, you increase security and flexibility. The root CA, being standalone and often offline, is less vulnerable to compromise, while the enterprise CA can handle day-to-day certificate management within the organization.
 
